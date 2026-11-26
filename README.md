@@ -24,34 +24,6 @@
 
 ---
 
-## 📌 Table of Contents
-
-1. [Project Overview](#overview)
-2. [Problem Statement](#problem-statement)
-3. [Project Objectives](#project-objectives)
-4. [Key Features](#features)
-5. [Technology Stack](#technology-stack)
-6. [System Architecture](#system-architecture)
-7. [Dataset Description](#dataset)
-8. [Data Preprocessing](#data-preprocessing)
-9. [Machine Learning Algorithms](#algorithms)
-10. [Model Training Methodology](#methodology)
-11. [Experimental Results](#results)
-12. [Confusion Matrix Analysis](#confusion-matrix-analysis)
-13. [Application Modules](#application-modules)
-14. [API Documentation](#api-documentation)
-15. [Project Structure](#project-structure)
-16. [Installation and Setup](#installation)
-17. [Running the Application](#running-the-application)
-18. [Testing](#testing)
-19. [Limitations](#limitations)
-20. [Future Improvements](#future-improvements)
-21. [Learning Outcomes](#learning-outcomes)
-22. [Viva Questions](#viva-questions)
-23. [Author](#author)
-
----
-
 <a id="overview"></a>
 ## 1. 📖 Project Overview
 
@@ -691,21 +663,10 @@ Use the FastAPI Swagger interface to inspect and test the API endpoints.
 ---
 
 <a id="limitations"></a>
-## 19. ⚠️ Limitations
 
-Although FraudShield AI demonstrates a complete machine learning workflow, it has several limitations.
-
-1. **Historical Dataset:** The model is trained on a historical dataset and may not represent current fraud patterns.
-2. **Anonymized Features:** PCA-transformed variables V1–V28 are difficult to interpret directly.
-3. **False Negatives:** The selected model does not detect every fraudulent transaction.
-4. **Threshold Sensitivity:** Different classification thresholds change the balance between precision and recall.
-5. **Model Drift:** Fraud patterns can change over time, requiring periodic model evaluation and retraining.
-6. **Production Readiness:** This academic implementation is not a validated production-grade financial fraud prevention system.
-
----
 
 <a id="future-improvements"></a>
-## 20. 🔮 Future Improvements
+## 19. 🔮 Future Improvements
 
 Potential future enhancements include:
 
@@ -722,129 +683,6 @@ Potential future enhancements include:
 
 ---
 
-<a id="learning-outcomes"></a>
-## 21. 🎓 Learning Outcomes
 
-Through this project, the following concepts and skills are demonstrated:
-
-- Supervised machine learning.
-- Binary classification.
-- Decision Tree and ensemble learning.
-- Gradient boosting algorithms.
-- Data preprocessing and feature scaling.
-- Imbalanced classification.
-- Stratified data splitting.
-- Prevention of data leakage.
-- Model validation and evaluation.
-- Precision, recall, F1-score and PR-AUC.
-- REST API development using FastAPI.
-- Frontend development using React.
-- Integration of machine learning models into a web application.
-- Git and GitHub version control.
-
----
-
-<a id="viva-questions"></a>
-## 22. 🎤 Viva Questions and Answers
-
-### Q1. What is credit card fraud detection?
-
-Credit card fraud detection is the process of identifying suspicious or unauthorized financial transactions using rule-based systems or machine learning techniques.
-
-### Q2. Why is this a classification problem?
-
-Because each transaction is assigned to one of two categories: legitimate (0) or fraudulent (1).
-
-### Q3. Why is the dataset imbalanced?
-
-Because legitimate transactions occur much more frequently than fraudulent transactions.
-
-### Q4. Why is accuracy not sufficient?
-
-A model can achieve very high accuracy by predicting every transaction as legitimate while detecting no fraud.
-
-### Q5. What is precision?
-
-Precision measures the proportion of transactions predicted as fraudulent that are actually fraudulent.
-
-### Q6. What is recall?
-
-Recall measures the proportion of actual fraudulent transactions that the model successfully identifies.
-
-### Q7. What is F1-score?
-
-F1-score is the harmonic mean of precision and recall.
-
-### Q8. Why did you use Random Forest?
-
-Random Forest combines multiple decision trees to improve predictive performance and reduce the overfitting risk of an individual tree.
-
-### Q9. What is XGBoost?
-
-XGBoost is an optimized gradient boosting algorithm that builds trees sequentially to improve prediction performance.
-
-### Q10. What is LightGBM?
-
-LightGBM is a gradient boosting framework designed for efficient and scalable tree-based learning.
-
-### Q11. What is data leakage?
-
-Data leakage occurs when information that should not be available during training influences the model, resulting in overly optimistic evaluation.
-
-### Q12. How did you prevent data leakage?
-
-The dataset was split before fitting the scaler. StandardScaler was fitted only on training data and then applied to validation and test data.
-
-### Q13. Why did you use PR-AUC?
-
-PR-AUC is useful for highly imbalanced classification because it evaluates the relationship between precision and recall across different thresholds.
-
-### Q14. Which model performed best?
-
-LightGBM was selected because it achieved the highest validation PR-AUC of 0.8763.
-
-### Q15. What is a confusion matrix?
-
-A confusion matrix summarizes classification predictions using true positives, true negatives, false positives and false negatives.
-
-### Q16. What is the purpose of FastAPI?
-
-FastAPI provides backend API endpoints that connect the frontend application with the trained machine learning models.
-
-### Q17. What is the purpose of React?
-
-React is used to develop the interactive frontend of the application.
-
-### Q18. What is the difference between validation and test data?
-
-Validation data helps select and tune models. Test data is held out for final evaluation after model selection.
-
----
-
-<a id="author"></a>
-## 23. 👨‍💻 Author
-
-**Rehaan Shaikh**
-
-Machine Learning and AI Engineering Student
-
-GitHub: [@Flame1003](https://github.com/Flame1003)
-
-Project Repository: [FraudShield AI](https://github.com/Flame1003/FraudShield-AI)
-
----
-
-## 📜 Disclaimer
-
-FraudShield AI is an educational machine learning project developed for academic and learning purposes. It is not intended to replace professional financial fraud prevention systems or make real financial decisions.
-
----
-
-<p align="center">
-  <strong>⭐ If you find this project interesting, consider giving the repository a star!</strong>
-</p>
-
-<p align="center">
-  Made with Python, Machine Learning and React.
 </p>
 
