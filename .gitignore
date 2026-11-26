@@ -1,0 +1,30 @@
+# Dataset (too large for git, contains financial data)
+backend/ml/data/creditcard.csv
+
+# Trained models (regeneratable)
+backend/ml/models/*.pkl
+backend/ml/models/training_results.json
+backend/ml/models/feature_names.pkl
+backend/ml/models/scaler.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
